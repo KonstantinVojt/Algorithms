@@ -10,13 +10,16 @@ public class Index {
 
         System.out.println("Level 1.");
         System.out.println("");
-        System.out.println("Введите 7 цифр в массив");
 
         Scanner scanner = new Scanner(System.in);
 
-        int[] arr = new int[7];
-        int[] index = new int[7];
+        System.out.println("Какого размера вы хотите массив");
+        
+        int length = scanner.nextInt();
+        int[] arr = new int[length];
+        int[] index = new int[length];
 
+        System.out.println("Введите числа в массив");
         for (int i = 0; i <= arr.length - 1; i++) {
             arr[i] = scanner.nextInt();
         }
